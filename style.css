@@ -5,12 +5,39 @@ body {
 .header,
 .footer {
     text-align: center;
-    background-color: gray;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    border-bottom: 1px solid gray;
+}
+
+.footer {
+    font-size: 1.5em;
+    line-height: 20px;
+    border-top: 1px solid gray;
+    padding-top: 25px;
+}
+
+.nav-link {
+    font-size: 1.5em;
+    line-height: 100px;
+}
+
+.container {
+    padding-bottom: 10px;
+}
+
+#company-name {
+    font-size: 2em;
 }
 
 a:link,
 a:visited {
-    color: whitesmoke;
+    color: lightgray;
 }
 
 a:active,
@@ -19,13 +46,8 @@ a:hover {
     text-decoration: none;
 }
 
-.dropdown {
-    text-align: center;
-}
-
-.button,
-.dropdown-menu {
-    margin: 10px auto
+img {
+    align-content: center;
 }
 
 .dropdown-menu {
@@ -34,7 +56,42 @@ a:hover {
     margin-left: -100px;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: .8em;
+    }
+    .nav-link {
+        font-size: 1.5em;
+        line-height: 20px;
+    }
+    .dropdown-menu {
+        width: 100%;
+        left: 0%;
+        margin-left: 0px;
+    }
+    .navbar-brand {
+        display: inline;
+    }
 }
