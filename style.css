@@ -1,10 +1,20 @@
+html,
 body {
-    background-color: whitesmoke;
+    height: 100%
+}
+
+a,
+h2 {
+    font-family: Merienda One;
 }
 
 .header,
 .footer {
     text-align: center;
+}
+
+.header {
+    line-height: 5vw;
 }
 
 img {
@@ -16,15 +26,18 @@ img {
 }
 
 .footer {
-    font-size: 1.5em;
-    line-height: 20px;
+    font-size: 1.5vw;
+    line-height: 2.5vw;
     border-top: 1px solid gray;
-    padding-top: 25px;
+    padding: 25px;
+    bottom: 0;
+    width: 100%;
 }
 
 .nav-link {
-    font-size: 1.5em;
-    line-height: 100px;
+    font-size: 1.5vw;
+    padding-right: .25em;
+    padding-left: .25em;
 }
 
 .container {
@@ -32,12 +45,13 @@ img {
 }
 
 #company-name {
-    font-size: 2em;
+    font-size: 2.3vw;
+    font-weight: 500;
 }
 
 a:link,
 a:visited {
-    color: lightgray;
+    color: darkgray;
 }
 
 a:active,
@@ -46,52 +60,57 @@ a:hover {
     text-decoration: none;
 }
 
-img {
-    align-content: center;
-}
-
 .dropdown-menu {
     width: 200px;
     left: 50%;
     margin-left: -100px;
 }
 
-html {
-    font-size: 1rem;
+.dropdown-item {
+    line-height: 2vw;
 }
 
-@include media-breakpoint-up(sm) {
+
+/* @media (min-width: 576px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
     html {
         font-size: 1.2rem;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 1.4rem;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 1.6rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        font-size: .8em;
     }
     .nav-link {
         font-size: 1.5em;
         line-height: 20px;
+
+
+}
+.dropdown-menu {
+    width: 100%;
+    left: 0%;
+    margin-left: 0px;
+}
+.navbar-brand {
+    display: inline;
+}
+
+}
+@media (min-width: 992px) {
+    html {
+        font-size: 1.1rem;
     }
-    .dropdown-menu {
-        width: 100%;
-        left: 0%;
-        margin-left: 0px;
+    .nav-link {
+        font-size: 1em;
     }
-    .navbar-brand {
-        display: inline;
+    #company-name {
+        font-size: 1.5em;
     }
 }
+@media (min-width: 1200px) {
+    #company-name {
+        font-size: 2vw;
+    }
+}
+*/

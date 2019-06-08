@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Mandali|Tajawal|ABeeZee|Abril+Fatface|Acme|Anton|Bowlby+One+SC|Merriweather+Sans|Orbitron|Passion+One|Prompt|Righteous|Russo+One|Teko|Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merienda+One" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>A-1 Modern Upholstery</title>
 </head>
 
-<body>
-    <div class="header">
+<body class="bg-dark">
+    <div class="header bg-light">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand d-block d-lg-none" href="#">A-1 Modern Upholstery</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav container-fluid">
                     <li class="nav-item col-sm-2">
-                        <a class="nav-link" href="#/services">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item col-sm-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#/projects" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
@@ -50,23 +50,23 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container bg-white">
+        <div class="row p-3">
             <div class="col-md-6 col-sm-12">
-                <img src="./banner.png" id="img-home" alt="Sofa in living room"></img>
+                <img src="./images/banner.png" id="img-home" alt="Sofa in living room"></img>
             </div>
             <div class="col-md-6 text-center align-self-center">
                 <h2>Welcome</h2>
                 <p>Over the past 20 years, we've worked on countless chairs, sofas, car seats, and other furniture pieces. Allow us to make your furniture dreams a <i>reality</i>.
                 </p>
-                <Link to="/services"><button id="services-button" class="under-bump">Learn More</button></Link>
             </div>
         </div>
+        <!-- How are we better? -->
         <div class="container text-center">
             <p>How do we go above and beyond our competition?</p>
             <div class="row">
                 <div class="card card-body col-md-3">
-                    <i class="fa fa-truck fa-5x"></i>
+                    <i class="fas fa-truck fa-5x"></i>
                     <br/> Free in-home or in-business estimates
                 </div>
                 <div class="card card-body col-md-3">
@@ -78,15 +78,72 @@
                     <br/> Unbeatable attention to detail
                 </div>
                 <div class="card card-body col-md-3">
-                    <i class="fa fa-clock-o fa-5x"></i>
+                    <i class="far fa-clock fa-5x"></i>
                     <br/> Timely work and delivery
                 </div>
             </div>
         </div>
+        <div class="container text-center" id="services">
+            <h2>Services</h2>
+            <p>We offer residential and commercial upholstery services for the following as well as <a href="#/custom">custom requests</a>:</p>
+            <div class="row">
+                <div class="card card-body col-lg-2">
+                    <a href="/#/chairs">
+                        <i class="fas fa-chair fa-5x"></i>
+                        <br/> Chairs
+                    </a>
+                </div>
+                <div class="card card-body col-lg-2">
+                    <a href="/#/couches">
+                        <i class="fas fa-couch fa-5x"></i>
+                        <br/> Couches
+                    </a>
+                </div>
+                <div class="card card-body col-lg-2">
+                    <a href="/#/ottomans">
+                        <i class="fas fa-hockey-puck fa-5x"></i>
+                        <br/> Ottomans
+                    </a>
+                </div>
+                <div class="card card-body col-lg-2">
+                    <a href="/#/headboards">
+                        <i class="fas fa-ethernet fa-5x"></i>
+                        <br/> Headboards
+                    </a>
+                </div>
+                <div class="card card-body col-lg-2">
+                    <a href="/#/cars">
+                        <i class="fas fa-car-side fa-5x"></i>
+                        <br/> Cars
+                    </a>
+                </div>
+                <div class="card card-body col-lg-2">
+                    <a href="/#/boats">
+                        <i class="fas fa-ship fa-5x"></i>
+                        <br/> Boats
+                    </a>
+                </div>
+            </div>
+            <p>You can bring your own fabric, but we also offer a wide range of high-quality fabrics for you to choose from, along with samples from manufacturers that we can order:</p>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <b>Leather</b><br/>Tough material, can be wiped clean.<br/>
+                    <b>Vinyl</b><br/>Cheaper leather alternative, ideal for families.<br/>
+                    <b>Cotton</b><br/>Resistant to wear/fading, but can wrinkle/soil.<br/>
+                    <b>Nylon</b><br/>Extremely durable, but can pill/fade.<br/>
+                    <b>Polyester</b><br/>Reduced fading, but can have pilling problems.<br/>
+                    <b>Wool</b><br/>Sturdy and durable.<br/>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="./images/fabric-rolls.jpg" alt="Rolls of fabric"></img>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <a href="https://www.google.com/maps/place/2036+University+Blvd+N,+Jacksonville,+FL+32211">2036 University Blvd North
-            <br></br>Jacksonville, FL 32211</a>
+    <div class="footer bg-light">
+        <a href="https://www.google.com/maps/place/2036+University+Blvd+N,+Jacksonville,+FL+32211">
+            2036 University Blvd North<br>Jacksonville, FL 32211
+        </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
