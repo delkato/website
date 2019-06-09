@@ -45,8 +45,12 @@ img {
 }
 
 #company-name {
-    font-size: 2.3vw;
+    font-size: 2.25vw;
     font-weight: 500;
+}
+
+.navbar-brand {
+    font-size: 5vw;
 }
 
 a:link,
@@ -70,47 +74,17 @@ a:hover {
     line-height: 2vw;
 }
 
-
-/* @media (min-width: 576px) {
-    html {
-        font-size: 1.1rem;
-    }
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 1.2rem;
-    }
+@media (max-width: 991px) {
     .nav-link {
-        font-size: 1.5em;
-        line-height: 20px;
-
-
-}
-.dropdown-menu {
-    width: 100%;
-    left: 0%;
-    margin-left: 0px;
-}
-.navbar-brand {
-    display: inline;
-}
-
-}
-@media (min-width: 992px) {
-    html {
-        font-size: 1.1rem;
-    }
-    .nav-link {
-        font-size: 1em;
+        font-size: 4vw;
+        text-align: left;
     }
     #company-name {
-        font-size: 1.5em;
+        display: none;
+    }
+    .dropdown-menu {
+        width: 100%;
+        left: 0%;
+        margin-left: 0px;
     }
 }
-@media (min-width: 1200px) {
-    #company-name {
-        font-size: 2vw;
-    }
-}
-*/
