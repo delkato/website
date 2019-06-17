@@ -3,6 +3,29 @@ body {
     height: 100%
 }
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B22222' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B22222' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.content {
+    padding-top: 8vw;
+}
+
+.dashed {
+    border-bottom: 1px dashed lightgray !important;
+}
+
+.dotted {
+    background-image: linear-gradient(to right, lightgray 10%, white 0%);
+    background-position: bottom;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
 a,
 h2 {
     font-family: Merienda One;
@@ -60,8 +83,12 @@ a:visited {
 
 a:active,
 a:hover {
-    color: lightblue;
+    color: brown;
     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: brown !important;
 }
 
 .dropdown-menu {
@@ -72,6 +99,26 @@ a:hover {
 
 .dropdown-item {
     line-height: 2vw;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: brown;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.nav-link:hover:before,
+.nav-link:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 @media (max-width: 991px) {
@@ -86,5 +133,12 @@ a:hover {
         width: 100%;
         left: 0%;
         margin-left: 0px;
+    }
+    .footer {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .content {
+        padding-top: 15vw;
     }
 }

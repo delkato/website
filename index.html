@@ -8,14 +8,13 @@
     <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merienda+One" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>A-1 Modern Upholstery</title>
 </head>
 
 <body class="bg-dark">
     <div class="header bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand p-3 d-block d-lg-none" href="#">A-1 Modern Upholstery</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +28,7 @@
                         <a class="nav-link dropdown-toggle" href="#projects" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#chairs">Chairs</a>
-                            <a class="dropdown-item" href="#couches">Couches</a>
+                            <a class="dropdown-item" href="#sofas">Sofas</a>
                             <a class="dropdown-item" href="#ottomans">Ottomans</a>
                             <a class="dropdown-item" href="#headboards">Headboards</a>
                             <a class="dropdown-item" href="#cars">Cars</a>
@@ -40,20 +39,25 @@
                     <li class="nav-item col-md-4">
                         <a class="nav-link" id="company-name" href="#">A-1 Modern Upholstery</a>
                     </li>
-                    <li class="nav-item col-md-2 col-sm-12 ">
+                    <li class="nav-item col-md-2 col-sm-12">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item col-md-2 col-sm-12 ">
+                    <li class="nav-item col-md-2 col-sm-12">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="container bg-white">
-        <div class="row p-3">
+    <div class="container bg-white content">
+        <div class="row">
+            <div class="col-1 offset-6 py-2 dotted"></div>
+            <div class="col-1 py-2 border-bottom dashed"></div>
+            <div class="col-4 py-2 border-bottom"></div>
+        </div>
+        <div class="row py-5">
             <div class="col-md-6 col-sm-12">
-                <img src="./images/banner.png" id="img-home" alt="Sofa in living room"></img>
+                <img class="banner-image" src="./images/banner.png" alt="Sofa in living room"></img>
             </div>
             <div class="col-md-6 text-center align-self-center">
                 <h2>Welcome</h2>
@@ -61,72 +65,97 @@
                 </p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-4 border-bottom"></div>
+            <div class="col-1 border-bottom dashed"></div>
+            <div class="col-1 dotted"></div>
+        </div>
         <!-- How are we better? -->
-        <div class="container text-center">
+        <div class="container py-3 text-center">
             <p>How do we go above and beyond our competition?</p>
-            <div class="row">
-                <div class="card card-body col-md-3">
-                    <i class="fas fa-truck fa-5x"></i>
-                    <br/> Free in-home or in-business estimates
+            <div class="row" id="services">
+                <div class="col-lg-6 col-xl-3 mb-2 d-flex">
+                    <div class="card card-body flex-fill">
+                        <i class="fas fa-truck fa-5x"></i>
+                        <br/> Free in-home or in-business estimates
+                    </div>
                 </div>
-                <div class="card card-body col-md-3">
-                    <i class="fa fa-briefcase fa-5x"></i>
-                    <br/> Over 20 years of experience
+                <div class="col-lg-6 col-xl-3 mb-2 d-flex">
+                    <div class="card card-body flex-fill">
+                        <i class="fa fa-briefcase fa-5x"></i>
+                        <br/> Over 20 years of experience
+                    </div>
                 </div>
-                <div class="card card-body col-md-3">
-                    <i class="fa fa-search fa-5x"></i>
-                    <br/> Unbeatable attention to detail
+                <div class="col-lg-6 col-xl-3 mb-2 d-flex">
+                    <div class="card card-body flex-fill">
+                        <i class="fa fa-search fa-5x"></i>
+                        <br/> Unbeatable attention to detail
+                    </div>
                 </div>
-                <div class="card card-body col-md-3">
-                    <i class="far fa-clock fa-5x"></i>
-                    <br/> Timely work and delivery
+                <div class="col-lg-6 col-xl-3 mb-2 d-flex">
+                    <div class="card card-body flex-fill">
+                        <i class="far fa-clock fa-5x"></i>
+                        <br/> Timely work and delivery
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Services -->
-        <div class="container text-center" id="services">
+        <div class="container py-3 text-center">
             <h2>Services</h2>
             <p>We offer residential and commercial upholstery services for the following as well as <a href="#/custom">custom requests</a>:</p>
             <div class="row">
-                <div class="card card-body col-lg-2">
-                    <a href="#chairs">
-                        <i class="fas fa-chair fa-5x"></i>
-                        <br/> Chairs
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#chairs">
+                            <i class="fas fa-chair fa-5x"></i>
+                            <br/> Chairs
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-body col-lg-2">
-                    <a href="#couches">
-                        <i class="fas fa-couch fa-5x"></i>
-                        <br/> Couches
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#sofas">
+                            <i class="fas fa-couch fa-5x"></i>
+                            <br/> Sofas
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-body col-lg-2">
-                    <a href="#ottomans">
-                        <i class="fas fa-hockey-puck fa-5x"></i>
-                        <br/> Ottomans
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#ottomans">
+                            <i class="fas fa-hockey-puck fa-5x"></i>
+                            <br/> Ottomans
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-body col-lg-2">
-                    <a href="#headboards">
-                        <i class="fas fa-ethernet fa-5x"></i>
-                        <br/> Headboards
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#headboards">
+                            <i class="fas fa-ethernet fa-5x"></i>
+                            <br/> Headboards
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-body col-lg-2">
-                    <a href="#cars">
-                        <i class="fas fa-car-side fa-5x"></i>
-                        <br/> Cars
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#cars">
+                            <i class="fas fa-car-side fa-5x"></i>
+                            <br/> Cars
+                        </a>
+                    </div>
                 </div>
-                <div class="card card-body col-lg-2">
-                    <a href="#boats">
-                        <i class="fas fa-ship fa-5x"></i>
-                        <br/> Boats
-                    </a>
+                <div class="col-lg-4 col-xl-2 mb-2">
+                    <div class="card card-body">
+                        <a href="#boats">
+                            <i class="fas fa-ship fa-5x"></i>
+                            <br/> Boats
+                        </a>
+                    </div>
                 </div>
             </div>
-            <p class="p-3">You can bring your own fabric, but we also offer a wide range of high-quality fabrics for you to choose from, along with samples from manufacturers that we can order:</p>
-            <div class="row">
+            <p>You can bring your own fabric, but we also offer a wide range of high-quality fabrics for you to choose from, along with samples from manufacturers that we can order:</p>
+            <div class="row mb-3">
                 <div class="col-md-6 col-sm-12 align-self-center">
                     <b>Leather</b><br/>Tough material, can be wiped clean.<br/>
                     <b>Vinyl</b><br/>Cheaper leather alternative, ideal for families.<br/>
@@ -141,11 +170,11 @@
             </div>
         </div>
         <!-- Projects -->
-        <div class="container text-center">
-            <h2>Projects</h2>
+        <div class="container py-3 text-center">
+            <h2 id="chairs">Projects</h2>
             <p>Over the years, we've worked on countless chairs, cushions, headboards, sofas, and more. Take a look at some of our work.</p>
             <!-- Chairs -->
-            <div class="row" id="chairs">
+            <div class="row" id="sofas">
                 <div class="col-md-6 col-sm-12 align-self-center">
                     <h4>Chairs</h4>
                 </div>
@@ -182,6 +211,15 @@
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="./images/chairs/10.png" alt="Tenth slide">
                             </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/chairs/11.jpeg" alt="Eleventh slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/chairs/12.jpeg" alt="Twelfth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/chairs/13.jpeg" alt="Thirteenth slide">
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#chairControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -194,55 +232,61 @@
                     </div>
                 </div>
             </div>
-            <!-- Couches -->
-            <div class="row" id="couches">
-                <div class="col-md-6 col-sm-12 align-self-center">
-                    <div id="couchControls" class="carousel slide" data-ride="carousel">
+            <!-- Sofas -->
+            <div class="row" id="ottomans">
+                <div class="col-md-6 order-md-last col-sm-12 align-self-center">
+                    <h4>Sofas</h4>
+                </div>
+                <div class="col-md-6 order-md-first col-sm-12 align-self-center">
+                    <div id="sofaControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="./images/couches/1.png" alt="First slide">
+                                <img class="d-block w-100" src="./images/sofas/1.png" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/2.png" alt="Second slide">
+                                <img class="d-block w-100" src="./images/sofas/2.png" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/3.png" alt="Third slide">
+                                <img class="d-block w-100" src="./images/sofas/3.png" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/4.png" alt="Fourth slide">
+                                <img class="d-block w-100" src="./images/sofas/4.png" alt="Fourth slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/5.png" alt="Fifth slide">
+                                <img class="d-block w-100" src="./images/sofas/5.png" alt="Fifth slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/6.png" alt="Sixth slide">
+                                <img class="d-block w-100" src="./images/sofas/6.png" alt="Sixth slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/7.png" alt="Seventh slide">
+                                <img class="d-block w-100" src="./images/sofas/7.png" alt="Seventh slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/8.png" alt="Eighth slide">
+                                <img class="d-block w-100" src="./images/sofas/8.png" alt="Eighth slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/couches/9.png" alt="Ninth slide">
+                                <img class="d-block w-100" src="./images/sofas/9.png" alt="Ninth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/sofas/10.jpeg" alt="Tenth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/sofas/11.jpeg" alt="Eleventh slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#couchControls" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#sofaControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#couchControls" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#sofaControls" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 align-self-center">
-                    <h4>Couches</h4>
-                </div>
             </div>
             <!-- Ottomans -->
-            <div class="row" id="ottomans">
+            <div class="row" id="headboards">
                 <div class="col-md-6 col-sm-12 align-self-center">
                     <h4>Ottomans</h4>
                 </div>
@@ -274,8 +318,11 @@
                 </div>
             </div>
             <!-- Headboards -->
-            <div class="row" id="headboards">
-                <div class="col-md-6 col-sm-12 align-self-center">
+            <div class="row" id="cars">
+                <div class="col-md-6 order-md-last col-sm-12 align-self-center">
+                    <h4>Headboards</h4>
+                </div>
+                <div class="col-md-6 order-md-first col-sm-12 align-self-center">
                     <div id="headboardControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -301,12 +348,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 align-self-center">
-                    <h4>Headboards</h4>
-                </div>
             </div>
             <!-- Cars -->
-            <div class="row" id="cars">
+            <div class="row" id="boats">
                 <div class="col-md-6 col-sm-12 align-self-center">
                     <h4>Cars</h4>
                 </div>
@@ -314,16 +358,7 @@
                     <div id="carControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="./images/ottomans/1.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/ottomans/2.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/ottomans/3.png" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/ottomans/4.png" alt="Fourth slide">
+                                <img class="d-block w-100" src="./images/cars/1.jpeg" alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carControls" role="button" data-slide="prev">
@@ -338,21 +373,15 @@
                 </div>
             </div>
             <!-- Boats -->
-            <div class="row" id="boats">
-                <div class="col-md-6 col-sm-12 align-self-center">
+            <div class="row" id="custom">
+                <div class="col-md-6 order-md-last col-sm-12 align-self-center">
+                    <h4>Boats</h4>
+                </div>
+                <div class="col-md-6 order-md-first col-sm-12 align-self-center">
                     <div id="boatControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="./images/headboards/1.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/headboards/2.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/headboards/3.png" alt="Third slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./images/headboards/4.png" alt="Fourth slide">
+                                <img class="d-block w-100" src="./images/boats/1.jpg" alt="First slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#boatControls" role="button" data-slide="prev">
@@ -365,61 +394,97 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <!-- Custom -->
+            <div class="row mb-3">
                 <div class="col-md-6 col-sm-12 align-self-center">
-                    <h4>Boats</h4>
+                    <h4>Custom Requests</h4>
+                </div>
+                <div class="col-md-6 col-sm-12 align-self-center">
+                    <div id="customControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./images/custom/1.jpeg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/custom/2.jpeg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/custom/3.jpeg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/custom/4.jpeg" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/custom/5.jpeg" alt="Fifth slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#customControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#customControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- About Us -->
-        <div class="container text-center" id="about">
+        <div class="container py-3 text-center" id="about">
             <h2>About Us</h2>
             <p>A-1 Modern Upholstery is a family-owned and operated local Jacksonville business. The owner, Carlos Delgado, personally works on and oversees every upholstery project to make sure every job is <i>nothing less than perfect.</i> We always worry
-                about the details and seek to ensure that every job is of the highest quality. We've even reupholstered furniture featured in movies, like <a href="https://www.imdb.com/title/tt0286179/">Sunshine State</a>.</p>
+                about the details and seek to ensure that every job is of the highest quality. We take pride in our work, whether it's for a home, business, clinic, or somewhere else. We've even reupholstered furniture featured in movies, like <a href="https://www.imdb.com/title/tt0286179/">Sunshine State</a>.</p>
         </div>
-        <div class="container text-center" id="contact">
+        <div class="container py-3 text-center" id="contact">
             <h2>Contact Us</h2>
             <div class="row" id="contact">
                 <div class="col-md-6 col-sm-12 align-self-center">
-                    <p>For more information, feel free to call <a href="tel:9048037492"><i class="fas fa-phone fa-sm"></i>(904) 881-9545</a>, e-mail <a href="mailto:cardel182037@yahoo.com"><i class="fas fa-envelope fa-sm"></i>cardel182037@yahoo.com</a>,
-                        or visit us at
+                    <p>For more information, feel free to call <a href="tel:9048037492"><i class="fas fa-phone fa-sm"></i>(904) 881-9545</a>,</br> e-mail <a href="mailto:a1modernu@gmail.com"><i class="fas fa-envelope fa-sm"></i>a1modernu@gmail.com</a>, or
+                        visit us at
                         <a href="https://www.google.com/maps/place/2036+University+Blvd+N,+Jacksonville,+FL+32211">
                             <i class="fas fa-home fa-sm"></i>2036 University Blvd North, Jacksonville, FL 32211.</a><br/> Hablamos español!</p>
                 </div>
                 <div class="col-md-6 col-sm-12 align-self-center">
-                    <p><b>Work Hours:</b></p>
-                    <table>
-                        <tr>
-                            <th>Day of Week</th>
-                            <th>Hours</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>9AM - 5PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>By appointment</td>
-                        </tr>
+                    <h3>Work Hours:</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Day of Week</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9AM - 5PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9AM - 5PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9AM - 5PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9AM - 5PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9AM - 5PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>By appointment</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
