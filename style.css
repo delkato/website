@@ -40,6 +40,13 @@ h2 {
     line-height: 5vw;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -6vw;
+    visibility: hidden;
+}
+
 img {
     width: 100%;
 }
@@ -140,5 +147,11 @@ a:hover {
     }
     .content {
         padding-top: 15vw;
+    }
+    .anchor {
+        display: block;
+        position: relative;
+        top: -15vw;
+        visibility: hidden;
     }
 }
